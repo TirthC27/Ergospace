@@ -1,0 +1,33 @@
+/* Modes.css
+.modes {
+    background-color: var(--background-light);
+  }
+  
+  .modes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+  } */
+
+-->Change 
+
+.modes {
+  background-color: var(--background-light);
+}
+.modes-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 1.5rem;
+  flex-wrap: nowrap; /* Prevents wrapping */
+  overflow-x: auto; /* Allows horizontal scrolling if needed */
+  padding-bottom: 1rem; /* Prevents cards from sticking to the edge */
+}
+
+/* Ensure responsiveness */
+/* @media (max-width: 1200px) {
+  .modes-container {
+    flex-wrap: wrap; 
+    justify-content: center;
+  }
+} */

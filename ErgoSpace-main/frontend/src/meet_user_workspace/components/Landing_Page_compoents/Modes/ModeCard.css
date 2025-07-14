@@ -1,0 +1,44 @@
+/* ModeCard.css */
+.mode-card {
+    max-width: 300px; /* Adjust to ensure proper fit */
+    min-width: 270px; /* Prevents cards from shrinking too much */
+    background-color: #1F2937;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: transform 0.3s ease;
+  }
+  
+  .mode-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .mode-image {
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .mode-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .mode-card:hover .mode-image img {
+    transform: scale(1.05);
+  }
+  
+  .mode-content {
+    padding: 1.5rem;
+  }
+  
+  .mode-content h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+  }
+  
+  .mode-content p {
+    color: var(--text-light);
+  }

@@ -1,0 +1,32 @@
+.reviewsss-card {
+    background-color: #1F2937;
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    box-shadow: var(--shadow-md);
+    position: relative;
+  }
+  
+  .review-rating {
+    display: flex;
+    margin-bottom: 1rem;
+  }
+  
+  .review-card blockquote {
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    color: var(--text-dark);
+  }
+  
+  .reviewer-info {
+    margin-top: 1rem;
+  }
+  
+  .reviewer-name {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+  
+  .reviewer-title {
+    color: var(--text-light);
+    font-size: 0.875rem;
+  }

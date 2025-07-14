@@ -1,0 +1,92 @@
+/* Hero.css */
+.hero {
+    padding: 6rem 0 4rem 0;
+    background-color: var(--background-light);
+  }
+  
+  .hero-content {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+  
+  .hero-text {
+    flex: 1;
+  }
+  
+  .hero-text h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    color: var(--text-dark);
+  }
+  
+  .hero-text .subheadline {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-dark);
+  }
+  
+  .hero-text .description {
+    color: var(--text-light);
+    margin-bottom: 2rem;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  /* .hero-image  img{
+    flex: 1;
+    max-width: 500px;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+  } */
+  
+  .hero-image {
+    flex: 1;
+    max-width: 500px;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    display: flex; /* Ensures proper alignment */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-image img {
+    width: 100%; /* Ensures responsiveness */
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+
+/* Add a hover effect for smooth interaction */
+  .hero-image img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  }
+
+  @media (max-width: 992px) {
+    .hero-content {
+      flex-direction: column;
+    }
+    
+    .hero-text {
+      text-align: center;
+    }
+    
+    .hero-buttons {
+      justify-content: center;
+    }
+    
+    .hero-text h1 {
+      font-size: 2.5rem;
+    }
+}
